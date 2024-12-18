@@ -1,10 +1,100 @@
-17 error Error: Command failed with exit code 1: git remote update
-17 error error: RPC failed; HTTP 502 curl 22 The requested URL returned error: 502
-17 error fatal: expected flush after ref listing
-17 error     at makeError (D:\resume-git-repo\zhrx-cli\zhrx-cli-best\node_modules\.pnpm\execa@5.0.0\node_modules\execa\lib\error.js:59:11)
-17 error     at module.exports.sync (D:\resume-git-repo\zhrx-cli\zhrx-cli-best\node_modules\.pnpm\execa@5.0.0\node_modules\execa\index.js:186:17)
-17 error     at Object.execSync (D:\resume-git-repo\zhrx-cli\zhrx-cli-best\node_modules\.pnpm\lerna@8.1.9_encoding@0.1.13\node_modules\lerna\dist\index.js:1579:31)
-17 error     at updateRemote (D:\resume-git-repo\zhrx-cli\zhrx-cli-best\node_modules\.pnpm\lerna@8.1.9_encoding@0.1.13\node_modules\lerna\dist\index.js:9202:18)
-17 error     at isBehindUpstream (D:\resume-git-repo\zhrx-cli\zhrx-cli-best\node_modules\.pnpm\lerna@8.1.9_encoding@0.1.13\node_modules\lerna\dist\index.js:9192:3)
-17 error     at VersionCommand.initialize (D:\resume-git-repo\zhrx-cli\zhrx-cli-best\node_modules\.pnpm\lerna@8.1.9_encoding@0.1.13\node_modules\lerna\dist\index.js:9486:57)
-17 error     at VersionCommand.runCommand (D:\resume-git-repo\zhrx-cli\zhrx-cli-best\node_modules\.pnpm\lerna@8.1.9_encoding@0.1.13\node_modules\lerna\dist\index.js:3296:36)
+0 silly argv {
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '8.1.9',
+0 silly argv   '$0': 'C:\\Users\\sujianqiang\\AppData\\Roaming\\npm\\node_modules\\lerna\\dist\\cli.js'
+0 silly argv }
+1 notice cli v8.1.9
+2 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["packages/*"]
+3 verbose rootPath D:\resume-git-repo\zhrx-cli\zhrx-cli-best
+4 verbose session 33b3edd20cbd2cca
+5 verbose user-agent lerna/8.1.9/node@v20.10.0+x64 (win32)
+6 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '8.1.9' }
+7 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["packages/*"]
+8 verbose rootPath D:\resume-git-repo\zhrx-cli\zhrx-cli-best
+9 info current version 1.0.7
+10 silly isAnythingCommitted
+11 verbose isAnythingCommitted 1
+12 silly getCurrentBranch
+13 verbose currentBranch dev
+14 silly remoteBranchExists
+15 silly isBehindUpstream
+16 silly isBehindUpstream dev is behind origin/dev by 0 commit(s) and ahead by 0
+17 silly hasTags
+18 verbose hasTags true
+19 silly git-describe.sync "v1.0.7-1-g6ea376a" => {"lastTagName":"v1.0.7","lastVersion":"v1.0.7","refCount":"1","sha":"6ea376a","isDirty":false}
+20 info Looking for changed packages since v1.0.7
+21 silly checking diff packages/lint-cli-config
+22 silly found diff in packages/lint-cli-config/package.json
+22 silly found diff in packages/lint-cli-config/src/utils/log.ts
+23 verbose filtered diff [
+23 verbose filtered diff   'packages/lint-cli-config/package.json',
+23 verbose filtered diff   'packages/lint-cli-config/src/utils/log.ts'
+23 verbose filtered diff ]
+24 verbose updated luofeng-lint-cli
+25 verbose git-describe undefined => "v1.0.7-1-g6ea376a"
+26 silly git-describe parsed => {"lastTagName":"v1.0.7","lastVersion":"v1.0.7","refCount":"1","sha":"6ea376a","isDirty":false}
+27 info execute Skipping releases
+28 silly lifecycle No script for "preversion" in "zhrx-cli-best", continuing
+29 silly lifecycle No script for "preversion" in "luofeng-lint-cli", continuing
+30 verbose version luofeng-lint-cli has no lockfile. Skipping lockfile update.
+31 silly lifecycle No script for "version" in "luofeng-lint-cli", continuing
+32 silly lifecycle No script for "version" in "zhrx-cli-best", continuing
+33 silly gitAdd [ 'packages/lint-cli-config/package.json', 'lerna.json' ]
+34 silly gitCommit chore(release): publish v1.0.8
+35 verbose git [ 'commit', '-m', 'chore(release): publish v1.0.8' ]
+36 silly gitTag v1.0.8 git tag %s -m %s
+37 verbose git [ 'tag', 'v1.0.8', '-m', 'v1.0.8' ]
+38 silly lifecycle No script for "postversion" in "luofeng-lint-cli", continuing
+39 silly lifecycle No script for "postversion" in "zhrx-cli-best", continuing
+40 info git Pushing tags...
+41 silly gitPush origin dev
+42 info publish Publishing packages to npm...
+43 notice Skipping all user and access validation due to third-party registry
+44 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
+45 silly getCurrentSHA
+46 verbose getCurrentSHA 835f7d515f9c7b0b1a78e4d69f0626afe4cecb6f
+47 silly lifecycle No script for "prepublish" in "zhrx-cli-best", continuing
+48 silly lifecycle No script for "prepare" in "zhrx-cli-best", continuing
+49 silly lifecycle No script for "prepublishOnly" in "zhrx-cli-best", continuing
+50 silly lifecycle No script for "prepack" in "zhrx-cli-best", continuing
+51 verbose pack-directory packages\lint-cli-config
+52 silly lifecycle No script for "prepublish" in "luofeng-lint-cli", continuing
+53 silly lifecycle No script for "prepare" in "luofeng-lint-cli", continuing
+54 silly lifecycle No script for "prepublishOnly" in "luofeng-lint-cli", continuing
+55 silly lifecycle No script for "prepack" in "luofeng-lint-cli", continuing
+56 silly lifecycle No script for "postpack" in "luofeng-lint-cli", continuing
+57 verbose packed packages\lint-cli-config
+58 silly lifecycle No script for "postpack" in "zhrx-cli-best", continuing
+59 verbose publish luofeng-lint-cli
+60 silly FetchError: request to https://registry.npmjs.org/luofeng-lint-cli failed, reason: read ECONNRESET
+60 silly     at ClientRequest.<anonymous> (D:\resume-git-repo\zhrx-cli\zhrx-cli-best\node_modules\.pnpm\minipass-fetch@3.0.5\node_modules\minipass-fetch\lib\index.js:130:14)
+60 silly     at ClientRequest.emit (node:events:514:28)
+60 silly     at TLSSocket.socketErrorListener (node:_http_client:495:9)
+60 silly     at TLSSocket.emit (node:events:514:28)
+60 silly     at emitErrorNT (node:internal/streams/destroy:151:8)
+60 silly     at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+60 silly     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+60 silly  FetchError: request to https://registry.npmjs.org/luofeng-lint-cli failed, reason: read ECONNRESET
+60 silly     at ClientRequest.<anonymous> (D:\resume-git-repo\zhrx-cli\zhrx-cli-best\node_modules\.pnpm\minipass-fetch@3.0.5\node_modules\minipass-fetch\lib\index.js:130:14)
+60 silly     at ClientRequest.emit (node:events:514:28)
+60 silly     at TLSSocket.socketErrorListener (node:_http_client:495:9)
+60 silly     at TLSSocket.emit (node:events:514:28)
+60 silly     at emitErrorNT (node:internal/streams/destroy:151:8)
+60 silly     at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+60 silly     at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+60 silly   code: 'ECONNRESET',
+60 silly   errno: 'ECONNRESET',
+60 silly   syscall: 'read',
+60 silly   type: 'system'
+60 silly }
+61 warn notice Package failed to publish: luofeng-lint-cli
+62 error ECONNRESET request to https://registry.npmjs.org/luofeng-lint-cli failed, reason: read ECONNRESET
+63 error errno "ECONNRESET" is not a valid exit code - exiting with code 1
+64 error FetchError: request to https://registry.npmjs.org/luofeng-lint-cli failed, reason: read ECONNRESET
+64 error     at ClientRequest.<anonymous> (D:\resume-git-repo\zhrx-cli\zhrx-cli-best\node_modules\.pnpm\minipass-fetch@3.0.5\node_modules\minipass-fetch\lib\index.js:130:14)
+64 error     at ClientRequest.emit (node:events:514:28)
+64 error     at TLSSocket.socketErrorListener (node:_http_client:495:9)
+64 error     at TLSSocket.emit (node:events:514:28)
+64 error     at emitErrorNT (node:internal/streams/destroy:151:8)
+64 error     at emitErrorCloseNT (node:internal/streams/destroy:116:3)

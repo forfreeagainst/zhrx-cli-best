@@ -26,7 +26,6 @@ export default (install = true) => {
   checking.start();
 
   const npmType = getNpmType();
-  console.log("🚀 ~ npmType:", npmType);
   const updateVersion = getUpdateVersion();
   checking.stop();
   if (updateVersion && install) {

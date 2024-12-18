@@ -12,5 +12,8 @@ export default {
   },
   warn(text: string) {
     console.warn(chalk.yellow.bold(text));
+  },
+  result() {
+    
   }
 }

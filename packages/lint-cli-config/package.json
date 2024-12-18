@@ -1,6 +1,6 @@
 {
   "name": "luofeng-lint-cli",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "zhrx的前端编码规范脚手架",
   "main": "index.js",
   "bin": "lib/cli.js",

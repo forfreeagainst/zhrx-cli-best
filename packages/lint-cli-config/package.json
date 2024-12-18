@@ -1,0 +1,45 @@
+{
+  "name": "luofeng-lint-cli",
+  "version": "1.0.6",
+  "description": "zhrx的前端编码规范脚手架",
+  "main": "index.js",
+  "bin": "lib/cli.js",
+  "keywords": [
+    "luofeng",
+    "lint",
+    "cli"
+  ],
+  "author": "尘少 <1982740368@qq.com>",
+  "homepage": "https://github.com/forfreeagainst/zhrx-cli-best#readme",
+  "license": "ISC",
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forfreeagainst/zhrx-cli-best.git"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "bugs": {
+    "url": "https://github.com/forfreeagainst/zhrx-cli-best/issues"
+  },
+  "devDependencies": {
+    "@types/command-exists": "^1.2.0",
+    "@types/node": "^22.9.3",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "command-exists": "^1.2.9",
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^12.1.0",
+    "ora": "^5.0.0"
+  },
+  "gitHead": "17a0dd4343d1548661b1a8f6d5058837da122876"
+}

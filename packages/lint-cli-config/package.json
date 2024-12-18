@@ -11,7 +11,7 @@
   ],
   "author": "尘少 <1982740368@qq.com>",
   "homepage": "https://github.com/forfreeagainst/zhrx-cli-best#readme",
-  "license": "ISC",
+  "license": "MIT",
   "files": [
     "lib"
   ],

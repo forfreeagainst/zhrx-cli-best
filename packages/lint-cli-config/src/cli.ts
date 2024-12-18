@@ -2,8 +2,7 @@
 
 import { program } from 'commander';
 import init from './actions/init';
-// import fs from 'fs-extra';
-// 常见API: readJSONSync,
+import { PKG_NAME,PKG_VERSION} from './utils/constant';
 
 //本地开发记得在对的路径打包构建
 const cwd = process.cwd();
@@ -19,10 +18,10 @@ program
     });
   });
 
-// program
-//   .name('luofeng-lint-cli')
-//   .description('CLI to some JavaScript string utilities')
-//   .version('0.0.0');
+program
+  .name(PKG_NAME)
+  .description('zhrx前端编码工程化脚手架')
+  .version(PKG_VERSION);
 // program
 //   .option('-s, --small', 'small pizza size')
 //   .option('-c, --cheese [type]', 'Add cheese with optional type');

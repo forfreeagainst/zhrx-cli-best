@@ -1,9 +1,6 @@
 #!/usr/bin/env node
 
 import { program } from 'commander';
-import ora from 'ora';
-import inquirer from 'inquirer';
-import chalk from 'chalk';
 import init from './actions/init';
 // import fs from 'fs-extra';
 // 常见API: readJSONSync,

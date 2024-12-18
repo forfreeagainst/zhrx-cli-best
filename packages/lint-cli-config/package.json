@@ -1,6 +1,6 @@
 {
   "name": "luofeng-lint-cli",
-  "version": "luofeng-lint-cli",
+  "version": "1.0.6",
   "description": "zhrx的前端编码规范脚手架",
   "main": "index.js",
   "bin": "lib/cli.js",
@@ -35,10 +35,10 @@
   },
   "dependencies": {
     "chalk": "^4.0.0",
+    "command-exists": "^1.2.9",
     "commander": "^12.1.0",
     "fs-extra": "^11.2.0",
     "inquirer": "^12.1.0",
-    "ora": "^5.0.0",
-    "command-exists": "^1.2.9"
+    "ora": "^5.0.0"
   }
 }

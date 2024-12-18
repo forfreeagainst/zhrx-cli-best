@@ -9,7 +9,7 @@ const cwd = process.cwd();
 program
   // 包名 init(command是必输，option是选输)
   .command('init')
-  .description("一键接入：接入前端编码规范工程化架子")
+  .description("一键接入：接入前端编码规范工程化架子。")
   //??? --vscode
   .action(function (opt) {//args是选项值，如：Object: {fix: true}
     init({

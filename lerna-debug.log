@@ -7,12 +7,12 @@
 1 notice cli v8.1.9
 2 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["packages/*"]
 3 verbose rootPath D:\resume-git-repo\zhrx-cli\zhrx-cli-best
-4 verbose session 33b3edd20cbd2cca
+4 verbose session 8b8ff31c00949ac0
 5 verbose user-agent lerna/8.1.9/node@v20.10.0+x64 (win32)
 6 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '8.1.9' }
 7 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["packages/*"]
 8 verbose rootPath D:\resume-git-repo\zhrx-cli\zhrx-cli-best
-9 info current version 1.0.7
+9 info current version 1.0.8
 10 silly isAnythingCommitted
 11 verbose isAnythingCommitted 1
 12 silly getCurrentBranch
@@ -22,18 +22,18 @@
 16 silly isBehindUpstream dev is behind origin/dev by 0 commit(s) and ahead by 0
 17 silly hasTags
 18 verbose hasTags true
-19 silly git-describe.sync "v1.0.7-1-g6ea376a" => {"lastTagName":"v1.0.7","lastVersion":"v1.0.7","refCount":"1","sha":"6ea376a","isDirty":false}
-20 info Looking for changed packages since v1.0.7
+19 silly git-describe.sync "v1.0.8-1-g602c433" => {"lastTagName":"v1.0.8","lastVersion":"v1.0.8","refCount":"1","sha":"602c433","isDirty":false}
+20 info Looking for changed packages since v1.0.8
 21 silly checking diff packages/lint-cli-config
 22 silly found diff in packages/lint-cli-config/package.json
-22 silly found diff in packages/lint-cli-config/src/utils/log.ts
+22 silly found diff in packages/lint-cli-config/src/actions/update.ts
 23 verbose filtered diff [
 23 verbose filtered diff   'packages/lint-cli-config/package.json',
-23 verbose filtered diff   'packages/lint-cli-config/src/utils/log.ts'
+23 verbose filtered diff   'packages/lint-cli-config/src/actions/update.ts'
 23 verbose filtered diff ]
 24 verbose updated luofeng-lint-cli
-25 verbose git-describe undefined => "v1.0.7-1-g6ea376a"
-26 silly git-describe parsed => {"lastTagName":"v1.0.7","lastVersion":"v1.0.7","refCount":"1","sha":"6ea376a","isDirty":false}
+25 verbose git-describe undefined => "v1.0.8-1-g602c433"
+26 silly git-describe parsed => {"lastTagName":"v1.0.8","lastVersion":"v1.0.8","refCount":"1","sha":"602c433","isDirty":false}
 27 info execute Skipping releases
 28 silly lifecycle No script for "preversion" in "zhrx-cli-best", continuing
 29 silly lifecycle No script for "preversion" in "luofeng-lint-cli", continuing
@@ -41,10 +41,10 @@
 31 silly lifecycle No script for "version" in "luofeng-lint-cli", continuing
 32 silly lifecycle No script for "version" in "zhrx-cli-best", continuing
 33 silly gitAdd [ 'packages/lint-cli-config/package.json', 'lerna.json' ]
-34 silly gitCommit chore(release): publish v1.0.8
-35 verbose git [ 'commit', '-m', 'chore(release): publish v1.0.8' ]
-36 silly gitTag v1.0.8 git tag %s -m %s
-37 verbose git [ 'tag', 'v1.0.8', '-m', 'v1.0.8' ]
+34 silly gitCommit chore(release): publish v1.0.9
+35 verbose git [ 'commit', '-m', 'chore(release): publish v1.0.9' ]
+36 silly gitTag v1.0.9 git tag %s -m %s
+37 verbose git [ 'tag', 'v1.0.9', '-m', 'v1.0.9' ]
 38 silly lifecycle No script for "postversion" in "luofeng-lint-cli", continuing
 39 silly lifecycle No script for "postversion" in "zhrx-cli-best", continuing
 40 info git Pushing tags...
@@ -53,7 +53,7 @@
 43 notice Skipping all user and access validation due to third-party registry
 44 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
 45 silly getCurrentSHA
-46 verbose getCurrentSHA 835f7d515f9c7b0b1a78e4d69f0626afe4cecb6f
+46 verbose getCurrentSHA 5e651e69ec9c892c279c2c7377686bd82ed201a2
 47 silly lifecycle No script for "prepublish" in "zhrx-cli-best", continuing
 48 silly lifecycle No script for "prepare" in "zhrx-cli-best", continuing
 49 silly lifecycle No script for "prepublishOnly" in "zhrx-cli-best", continuing
@@ -70,19 +70,15 @@
 60 silly FetchError: request to https://registry.npmjs.org/luofeng-lint-cli failed, reason: read ECONNRESET
 60 silly     at ClientRequest.<anonymous> (D:\resume-git-repo\zhrx-cli\zhrx-cli-best\node_modules\.pnpm\minipass-fetch@3.0.5\node_modules\minipass-fetch\lib\index.js:130:14)
 60 silly     at ClientRequest.emit (node:events:514:28)
-60 silly     at TLSSocket.socketErrorListener (node:_http_client:495:9)
-60 silly     at TLSSocket.emit (node:events:514:28)
-60 silly     at emitErrorNT (node:internal/streams/destroy:151:8)
-60 silly     at emitErrorCloseNT (node:internal/streams/destroy:116:3)
-60 silly     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+60 silly     at _destroy (node:_http_client:875:13)
+60 silly     at onSocketNT (node:_http_client:895:5)
+60 silly     at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
 60 silly  FetchError: request to https://registry.npmjs.org/luofeng-lint-cli failed, reason: read ECONNRESET
 60 silly     at ClientRequest.<anonymous> (D:\resume-git-repo\zhrx-cli\zhrx-cli-best\node_modules\.pnpm\minipass-fetch@3.0.5\node_modules\minipass-fetch\lib\index.js:130:14)
 60 silly     at ClientRequest.emit (node:events:514:28)
-60 silly     at TLSSocket.socketErrorListener (node:_http_client:495:9)
-60 silly     at TLSSocket.emit (node:events:514:28)
-60 silly     at emitErrorNT (node:internal/streams/destroy:151:8)
-60 silly     at emitErrorCloseNT (node:internal/streams/destroy:116:3)
-60 silly     at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+60 silly     at _destroy (node:_http_client:875:13)
+60 silly     at onSocketNT (node:_http_client:895:5)
+60 silly     at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
 60 silly   code: 'ECONNRESET',
 60 silly   errno: 'ECONNRESET',
 60 silly   syscall: 'read',
@@ -94,7 +90,5 @@
 64 error FetchError: request to https://registry.npmjs.org/luofeng-lint-cli failed, reason: read ECONNRESET
 64 error     at ClientRequest.<anonymous> (D:\resume-git-repo\zhrx-cli\zhrx-cli-best\node_modules\.pnpm\minipass-fetch@3.0.5\node_modules\minipass-fetch\lib\index.js:130:14)
 64 error     at ClientRequest.emit (node:events:514:28)
-64 error     at TLSSocket.socketErrorListener (node:_http_client:495:9)
-64 error     at TLSSocket.emit (node:events:514:28)
-64 error     at emitErrorNT (node:internal/streams/destroy:151:8)
-64 error     at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+64 error     at _destroy (node:_http_client:875:13)
+64 error     at onSocketNT (node:_http_client:895:5)

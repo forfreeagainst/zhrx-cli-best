@@ -57,3 +57,51 @@ export const ESLINT_TYPES: Array<{ name: string; value: string }> = [
     value: 'es5',
   },
 ];
+
+/**
+ * eslint 扫描忽略的文件或文件目录
+ * 需要同步到 config/.eslintignore.ejs
+ */
+export const ESLINT_IGNORE_PATTERN: string[] = [
+  'node_modules',
+  'build',
+  'dist',
+  'coverage',
+  'es',
+  'lib',
+  '**/*.min.js',
+  '**/*-min.js',
+  '**/*.bundle.js',
+];
+
+/**
+ * stylelint 扫描文件扩展名
+ */
+export const STYLELINT_FILE_EXT: string[] = ['.css', '.scss', '.less', '.acss'];
+
+/**
+ * stylelint 扫描忽略的文件或文件目录
+ */
+export const STYLELINT_IGNORE_PATTERN: string[] = [
+  'node_modules/',
+  'build/',
+  'dist/',
+  'coverage/',
+  'es/',
+  'lib/',
+  '**/*.min.css',
+  '**/*-min.css',
+  '**/*.bundle.css',
+];
+
+/**
+ * markdownLint 扫描忽略的文件或文件目录
+ */
+export const MARKDOWN_LINT_IGNORE_PATTERN: string[] = [
+  'node_modules/',
+  'build/',
+  'dist/',
+  'coverage/',
+  'es/',
+  'lib/',
+];

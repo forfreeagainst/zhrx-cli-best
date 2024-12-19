@@ -7,8 +7,8 @@ import log from '../utils/log';
 //有更新版本，返回版本号,否则返回空
 const getUpdateVersion = (): string | null=> {
   const npmType = getNpmType();
+  console.log("🚀 ~ getUpdateVersion ~ npmType:", npmType)
   const latestVersion = execSync(`${npmType} view ${PKG_NAME} version`).toString('utf-8').trim();
-  console.log("🚀 ~ latestVersion:", latestVersion)
   if (latestVersion === PKG_VERSION) return null;
   const pkgVersionArr = PKG_VERSION.split('.');
   console.log("🚀 ~ updateVersion ~ pkgVersionArr:", pkgVersionArr)
@@ -21,12 +21,11 @@ const getUpdateVersion = (): string | null=> {
   return null;
 }
 
-export default (install = true) => {
+export default ({install}) => {
   const checking = ora('正在检查最新版本...');
   checking.start();
 
   const npmType = getNpmType();
-  console.log("🚀 ~ npmType:", npmType);
   const updateVersion = getUpdateVersion();
   checking.stop();
   if (updateVersion && install) {
@@ -44,5 +43,7 @@ export default (install = true) => {
   } else if (install) {
     //版本是最新，无需更新
     log.info('当前版本已经是最新啦/当前没有可用的更新');
+  } else {
+    log.info('当前没有可用更新，且初始化默认不自动安装依赖');
   }
 }

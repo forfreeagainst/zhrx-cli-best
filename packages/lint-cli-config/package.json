@@ -1,6 +1,6 @@
 {
   "name": "luofeng-lint-cli",
-  "version": "1.0.6",
+  "version": "1.0.10",
   "description": "zhrx的前端编码规范脚手架",
   "main": "index.js",
   "bin": "lib/cli.js",
@@ -11,7 +11,7 @@
   ],
   "author": "尘少 <1982740368@qq.com>",
   "homepage": "https://github.com/forfreeagainst/zhrx-cli-best#readme",
-  "license": "ISC",
+  "license": "MIT",
   "files": [
     "lib"
   ],
@@ -39,7 +39,10 @@
     "commander": "^12.1.0",
     "fs-extra": "^11.2.0",
     "inquirer": "^12.1.0",
-    "ora": "^5.0.0"
+    "ora": "^5.0.0",
+    "glob":"^11.0.0",
+    "fast-glob": "^3.3.2",
+    "cross-spawn": "^7.0.3"
   },
-  "gitHead": "17a0dd4343d1548661b1a8f6d5058837da122876"
+  "gitHead": "5e651e69ec9c892c279c2c7377686bd82ed201a2"
 }

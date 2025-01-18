@@ -110,7 +110,7 @@ export default async (options: InitOptions) => {
     log.info(`Step ${++step}. 安装依赖`);
     const npmType = await getNpmType();
     // 我还在开发，我不安装,先注释 TODO TODO
-    spawn.sync(npmType, ['i', '-D', PKG_NAME], { stdio: 'inherit', cwd });
+    // spawn.sync(npmType, ['i', '-D', PKG_NAME], { stdio: 'inherit', cwd });
     log.success(`Step ${step}. 安装依赖成功 :D`);
   }
 

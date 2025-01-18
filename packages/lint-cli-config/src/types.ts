@@ -29,3 +29,14 @@ export interface PKG {
 
   [key: string]: any;
 }
+
+export interface PkgConfig {
+    // 是否启用 ESLint
+  enableESLint?: boolean;
+  // 是否启用 stylelint
+  enableStylelint?: boolean;
+  // 是否启用 markdown lint
+  enableMarkdownlint?: boolean;
+  // 是否启用 prettier
+  enablePrettier?: boolean;
+}

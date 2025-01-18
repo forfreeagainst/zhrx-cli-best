@@ -45,7 +45,8 @@
     "glob": "^11.0.0",
     "fast-glob": "^3.3.2",
     "cross-spawn": "^7.0.3",
-    "ejs": "^3.1.5"
+    "ejs": "^3.1.5",
+    "prettier": "^3.4.2"
   },
   "gitHead": "5e651e69ec9c892c279c2c7377686bd82ed201a2"
 }

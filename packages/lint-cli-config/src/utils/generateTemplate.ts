@@ -9,6 +9,7 @@ import {
   STYLELINT_IGNORE_PATTERN
 } from "./constant";
 
+//ejs模板内容要改 TODO TODO
 export default async (cwd: string, config: Record<string, any>) => {
   //注意config要进行打包
   //  "build": "rm -rf lib && npm run copyfiles && tsc",
